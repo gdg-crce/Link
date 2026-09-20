@@ -8,13 +8,13 @@ The system provides fast, memorable branded short URLs (such as `link.gdgcrce.co
 
 ## Features
 
-- ⚡ **Ultra-Fast Dynamic Redirects**: Server-side redirect engine querying PostgreSQL directly with minimal latency.
-- 🔒 **Private Admin Dashboard**: Protected server-side via Supabase SSR authentication and Next.js middleware.
-- 🎨 **GDG Design System**: Minimal, responsive, accessible interface with Google color accents and dark slate mode.
-- 📱 **Branded QR Code Generator**: Generates high-resolution PNG & vector SVG QR codes pointing to the branded short URL.
-- 📊 **Click Analytics**: Atomic click counter and privacy-conscious analytics (IP hashing, device type, top referrers, country detection).
-- 🛡️ **Hardened Security**: Row Level Security (RLS) policies, slug regex validation, reserved path collision prevention, and open-redirect protection.
-- 🚀 **Vercel & Custom Domain Ready**: Native Next.js 15 App Router architecture with full support for `link.gdgcrce.com`.
+- **Ultra-Fast Dynamic Redirects**: Server-side redirect engine querying PostgreSQL directly with minimal latency.
+- **Private Admin Dashboard**: Protected server-side via Supabase SSR authentication and Next.js middleware.
+- **GDG Design System**: Minimal, responsive, accessible interface with Google color accents and dark slate mode.
+- **Branded QR Code Generator**: Generates high-resolution PNG & vector SVG QR codes pointing to the branded short URL.
+- **Click Analytics**: Atomic click counter and privacy-conscious analytics (IP hashing, device type, top referrers, country detection).
+- **Hardened Security**: Row Level Security (RLS) policies, slug regex validation, reserved path collision prevention, and open-redirect protection.
+- **Vercel & Custom Domain Ready**: Native Next.js 15 App Router architecture with full support for `link.gdgcrce.com`.
 
 ---
 
@@ -209,4 +209,4 @@ or download and print high-resolution QR code
 
 ## License
 
-Maintained with ❤️ by the **Google Developer Groups On Campus CRCE** team.
+Maintained by the **Google Developer Groups On Campus CRCE** team.

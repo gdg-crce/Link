@@ -19,7 +19,7 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 if (!serviceKey) {
-  console.log("\n⚠️  Missing SUPABASE_SERVICE_ROLE_KEY in .env.local");
+  console.log("\n[WARNING] Missing SUPABASE_SERVICE_ROLE_KEY in .env.local");
   console.log("------------------------------------------------------------------");
   console.log("1. Open Supabase: https://supabase.com/dashboard/project/zeqkprhqldmawidubcxh/settings/api");
   console.log("2. Copy your 'service_role' secret key.");
@@ -38,7 +38,7 @@ const users = [
   { email: "abhishekjose780@gmail.com", password: "GdgAdmin#Abhishek2026!" },
 ];
 
-console.log("\n🚀 Syncing Admin Users with Supabase Auth...\n");
+console.log("\nSyncing Admin Users with Supabase Auth...\n");
 
 for (const u of users) {
   const { data, error } = await supabase.auth.admin.createUser({
@@ -58,16 +58,16 @@ for (const u of users) {
           email_confirm: true,
         });
         if (updateErr) {
-          console.error(`❌ Failed to update password for ${u.email}:`, updateErr.message);
+          console.error(`[ERROR] Failed to update password for ${u.email}:`, updateErr.message);
         } else {
-          console.log(`✅ Set password for ${u.email}`);
+          console.log(`[SUCCESS] Set password for ${u.email}`);
         }
       }
     } else {
-      console.error(`❌ Error creating ${u.email}:`, error.message);
+      console.error(`[ERROR] Error creating ${u.email}:`, error.message);
     }
   } else {
-    console.log(`✅ Created and confirmed user: ${u.email}`);
+    console.log(`[SUCCESS] Created and confirmed user: ${u.email}`);
   }
 
   // Ensure also in admin_users table
@@ -77,4 +77,4 @@ for (const u of users) {
   );
 }
 
-console.log("\n🎉 All admin accounts are ready! You can now log in at http://localhost:3000/admin/login\n");
+console.log("\nAll admin accounts are ready. You can now log in at http://localhost:3000/admin/login\n");
