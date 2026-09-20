@@ -15,8 +15,8 @@ import {
   Power,
   AlertTriangle,
   Link as LinkIcon,
-  MousePointerClick,
-  Sparkles,
+  MousePointer,
+  CheckCircle2,
   Calendar,
 } from "lucide-react";
 import type { LinkItem, LinkStats } from "@/lib/types";
@@ -120,7 +120,7 @@ export default function AdminDashboardView({ links, stats, baseUrl }: Props) {
         <div className="stat-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <span className="stat-label">Active Links</span>
-            <Sparkles size={16} color="var(--gdg-green)" />
+            <CheckCircle2 size={16} color="var(--gdg-green)" />
           </div>
           <span className="stat-value" style={{ color: "var(--gdg-green)" }}>
             {stats.activeLinks.toLocaleString()}
@@ -130,7 +130,7 @@ export default function AdminDashboardView({ links, stats, baseUrl }: Props) {
         <div className="stat-card">
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <span className="stat-label">Total Clicks</span>
-            <MousePointerClick size={16} color="var(--gdg-yellow)" />
+            <MousePointer size={16} color="var(--gdg-yellow)" />
           </div>
           <span className="stat-value">{stats.totalClicks.toLocaleString()}</span>
         </div>

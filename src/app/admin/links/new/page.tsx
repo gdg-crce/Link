@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Plus, Globe, AlertCircle, Sparkles } from "lucide-react";
+import { ArrowLeft, Plus, Globe, AlertCircle } from "lucide-react";
 import { createLinkAction } from "@/lib/actions";
 
 export default function NewLinkPage() {

@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import QRCode from "qrcode";
-import { ArrowLeft, Download, Copy, Check, ExternalLink, Sparkles } from "lucide-react";
+import { ArrowLeft, Download, Copy, Check, ExternalLink } from "lucide-react";
 import type { LinkItem } from "@/lib/types";
 
 interface Props {
