@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   description:
     "Official branded short links for Google Developer Groups On Campus - Fr. Conceicao Rodrigues College of Engineering.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
   },
 };
 
